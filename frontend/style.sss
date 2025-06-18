@@ -1,0 +1,249 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* --- General Body and Container Styles --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #ffffff; /* White container background */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 90%;
+    max-width: 800px; /* Max width for larger screens */
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh; /* Minimum height for the container */
+    max-height: 95vh; /* Max height to prevent overflow on very small screens */
+    margin: 20px 0;
+}
+
+/* --- Header --- */
+h1 {
+    background-color: #4CAF50; /* Green header */
+    color: #ffffff;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* --- Chat Area --- */
+.chat-area {
+    flex-grow: 1; /* Allows chat area to expand */
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling for chat messages */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between messages */
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #eee;
+}
+
+.message-bubble {
+    padding: 12px 18px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.user-message {
+    align-self: flex-end; /* Align to the right */
+    background-color: #e6f7ff; /* Light blue for user messages */
+    color: #333;
+    border-bottom-right-radius: 5px; /* Sharper corner for user message */
+}
+
+.advisor-message {
+    align-self: flex-start; /* Align to the left */
+    background-color: #e0ffe0; /* Light green for advisor messages */
+    color: #333;
+    border-bottom-left-radius: 5px; /* Sharper corner for advisor message */
+}
+
+/* --- Input Area --- */
+.input-area {
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#user-input {
+    flex-grow: 1; /* Input field takes most space */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1em;
+    outline: none; /* Remove outline on focus */
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#user-input:focus {
+    border-color: #4CAF50; /* Green border on focus */
+}
+
+#send-button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#send-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-1px); /* Slight lift effect */
+}
+
+#send-button:active {
+    transform: translateY(0);
+}
+
+/* --- Recommendations Section --- */
+.recommendations-section {
+    padding: 20px;
+    background-color: #f9f9f9; /* Slightly different background for recommendations */
+    border-top: 1px solid #eee;
+}
+
+.recommendations-section h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.card-recommendation {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.card-recommendation:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.card-recommendation h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.card-recommendation p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.card-recommendation p strong {
+    color: #000;
+}
+
+.reward-breakdown {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 3px solid #4CAF50;
+}
+
+.apply-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #007bff; /* Blue for call to action */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.apply-link:hover {
+    background-color: #0056b3;
+}
+
+.start-new-search-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto; /* Center button */
+    padding: 10px 20px;
+    background-color: #6c757d; /* Grey button for secondary action */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-new-search-btn:hover {
+    background-color: #5a6268;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        min-height: 85vh;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    .input-area {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #user-input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #send-button {
+        width: 100%;
+    }
+
+    .message-bubble {
+        max-width: 85%;
+        padding: 10px 15px;
+    }
+
+    .recommendations-section {
+        padding: 15px;
+    }
+
+    .card-recommendation {
+        padding: 15px;
+    }
+}
