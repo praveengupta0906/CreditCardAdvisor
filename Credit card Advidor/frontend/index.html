@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Card Advisor</h1>
+        <div id="chat-window">
+            <div class="message advisor-message">Hello! I'm your Credit Card Advisor. How can I help you find the best credit card today?</div>
+            </div>
+        <div id="input-area">
+            <input type="text" id="user-input" placeholder="Type your request here...">
+            <button id="send-button">Send</button>
+        </div>
+        <div id="recommendations-summary" style="display: none;">
+            <h2>Your Top Recommendations:</h2>
+            <div id="card-list">
+                </div>
+            <button id="restart-button">Start New Search</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
