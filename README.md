@@ -31,3 +31,4 @@ Open your terminal or Git Bash and run:
 ```bash
 git clone [https://github.com/](https://github.com/)[praveengupta0906]/[CreditCardAdvisor].git
 cd [CreditCardAdvisor]
+![credit-card-advisor-video-Demo gif](https://github.com/user-attachments/assets/ddef2ada-796a-44f2-9ce4-d45b17d60308)
